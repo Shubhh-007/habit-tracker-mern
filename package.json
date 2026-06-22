@@ -1,0 +1,13 @@
+{
+  "name": "habit-tracker-root",
+  "version": "1.0.0",
+  "description": "Root package for deployment",
+  "scripts": {
+    "install-server": "cd server && npm install",
+    "install-client": "cd client && npm install",
+    "build-client": "cd client && npm run build",
+    "install-all": "npm run install-server && npm run install-client",
+    "build": "npm run install-all && npm run build-client",
+    "start": "cd server && npm start"
+  }
+}
